@@ -1,0 +1,149 @@
+\documentclass[a4paper,openright,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{natbib}
+\usetikzlibrary{arrows.meta,positioning}
+\newtheorem{defi}{Definición}[section]
+\newtheorem{cor}{Corolario}[section]
+\newtheorem{lem}{Lema}[section]
+\newtheorem{teo}{Teorema}[section]
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\parindent}{0mm}
+
+\title{Avances}
+\author{jos256 }
+\date{April 2021}
+
+\begin{document}
+	\textbf{\LARGE{El modelo SIR}} \hfill \break
+	
+	Dentro del área de la epidemiología, uno de los modelos 	
+	matemáticos más usado es el modelo SIR. El cual fue propuesto 	
+	por W.O Kermack y A.G Mckendrick (1927), esté modelo nos permite
+	caracterizar como evoluciona una epidemia que se propaga 
+	en los individuos de una cierta población (N) en un periodo de tiempo 	    (t). El modelo SIR esta formado por un sistema de tres ecuaciones 	
+	diferenciales y ademas divide a la población (N) en tres estados 		
+	
+		\begin{itemize}
+			\item{$S \left(t\right)$: Representa el número de personas 					susceptibles, personas sanas que al entrar en contacto en 	
+			la enfermedad pueden resultar infectados, en función del	
+			tiempo.}
+			
+			\item{$I \left(t\right)$: Representa el número de personas	
+			infectadas, este grupo puede infectar a las personas
+			susceptibles, en función del tiempo.}
+			
+			\item{$R \left(t\right)$: Representa el número de personas
+			recuperadas, este grupo se ha recuperado de la enfermedad 
+			y se han vuelto inmunes o han muerto, en función del tiempo. }
+		\end{itemize}
+	
+	Por lo que la suma de esto tres grupos corresponde a la población   		total, esto es: 
+		\begin{center}
+		$N = S \left(t\right)+ I\left(t\right) + R \left(t\right)$.
+		\end{center}
+	El modelo SIR considera a la población constante pues no cuenta	
+	los nacimientos y las muertes que suceden durante la enfermedad,
+	en este modelo se considera que la forma en que se infectan las 	  		personas es por contacto directo entre las personas. Así mismo los	
+	individuos del grupo $I \left(t\right)$ que logran recuperarse de 	
+	la enfermedad obtienen inmunidad o perecen, esto los hace inmunes 	
+	y pasan al grupo $R \left(t\right).$\nocite{allman2004mathematical}
+	\hfill \break
+	
+	\textbf{\Large{Formulando el modelo}} \hfill \break
+	
+	La tasa de infección de este modelo estará dada por 	
+	el producto del grupo de los susceptibles y el de los infectados, así 	
+	entonces tendríamos el producto de $S \left(t\right) \cdot I \left(t		\right)$, pero al realizar esto tendríamos que todos estarían 	
+	contagiados, para solucionarlo tenemos que multiplicar por un 	
+	parámetro $\beta$, para así obtener $-\beta \cdot S \left(t\right) 			\cdot I \left(t	\right)$, esto ultimo pasa ya que la cantidad de 			personas de este grupo va decreciendo y se van agregando al de los 	
+	infectados, a dicha $\beta$ se le conoce como tasa de contagio
+	\hfill \break
+	
+	Para hablar de una tasa de recuperación tengamos en cuenta que los	
+	individuos padecerán la enfermedad durante un tiempo determinado	
+	hasta que se recupere y adquiera la inmunidad o muera.
+	para esto multiplicaremos por un parámetro $\gamma$, así 	
+	entonces la tasa de recuperación estará dada por $\gamma \cdot I 	    	\left(t\right)$ con $\gamma > 0$. \hfill \break
+	
+	por tanto se tiene que $\gamma = \frac{1}{d} $, donde 'd' es el número 		de días que pasa infectado el individuo.\hfill \break
+	 
+	podemos representar el sistema de ecuaciones que describe el 				sistema SIR mediante los compartimientos S,I,R y los flujos de entrada 		y salida como se muestra en el diagrama :
+	
+	\newpage
+		
+	\begin{center}
+	
+	\begin{tikzpicture}[node distance=2cm, auto, >=Latex, 
+    every node/.append style={align=center},int/.style={draw, minimum 			size=2cm}]
+
+   	\node [int](S) {$S$};
+   	\node [int, right=of S](I) {$I$};
+   	\node [int, right=of I](R) {$R$};
+   	\coordinate[right=of I] (out);
+   	\path[->] (S) edge node {$\beta I S$} (I)
+   			  (I) edge node {$\gamma I$} (R);
+	\end{tikzpicture}
+
+	\end{center}
+	
+	
+	Ahora formulando el sistema de EDO's que describe el comportamiento	
+	del modelo SIR :
+	
+		\begin{equation} \label{eq1}
+		\frac{dS}{dt} = -\beta S\left(t\right)I\left(t\right) \mathrm{ ; } 			\hspace{1cm}  S\left(0\right) = S_{0} > 0
+		\end{equation}
+					
+		\begin{equation} \label{eq2}
+		\frac{dI}{dt} = \beta S\left(t\right)I\left(t\right) - \gamma I				\left(t\right) \mathrm{ ; } \hspace{.4cm}  I\left(0\right) = I_{0}
+		> 0
+		\end{equation}			
+		
+		\begin{equation} \label{eq3}
+		\frac{dR}{dt} = \gamma I\left(t\right) \mathrm{ ; } \hspace{2cm} R			\left(0\right) = R_{0} > 0
+		\end{equation}
+	
+	Si tomamos a $R_{0} = 0$ estamos suponiendo que al inicio del 				proceso	de la propagación de la enfermedad, solo hay personas 				susceptibles e infecciosos, así pues $N = S_{0} + I_{0}$.\hfill \break
+	
+	Lo atractivo de este modelo es, que si conocemos los parámetros 	
+	$\beta$, $\gamma $ y las condiciones iniciales para $S_{0}$ e $I_{0}$
+	podremos darnos una aproximación de cuando la infección se propagará
+	a la población y conocer el comportamiento de la epidemia.\hfill \break
+	
+	Pero, ¿cómo saber si habrá un brote epidémico?, para poder responder	
+	esta pregunta realicemos el siguiente análisis, el cual estará dividido	
+	en dos casos.\hfill \break
+	
+	\textbf{Caso 1:} cuando $I' > 0$ en el tiempo $t_{0}$, notemos que de 		manipular la ecuación \eqref{eq2} obtenemos $I' \left(0\right) = I_{0} 		\left( \beta S_{0}-\gamma\right) > 0$, fijémonos en $\beta S_{0}-\gamma		> 0$ por lo que se tiene $S_{0} > \frac{\gamma}{\beta} $\footnote{Obs: 		a la cantidad $\frac{\gamma}{\beta}$ también la expresan como $				\frac{1}{\rho}$}. \hfill \break
+	
+	De $S_{0} > \frac{\gamma}{\beta}$ obtenemos $\frac{\beta S}{\gamma}>1$
+	así entonces podemos concluir que habrá un brote epidémico.
+	\hfill \break
+	
+	\textbf{Caso 2:} cuando $I' < 0$ en el tiempo $t_{0}$ por lo que	
+	$I' \left(0\right) = I_{0} \left( \beta S_{0}-\gamma\right) < 0$
+	por lo que no hay epidemia ya que $S' < 0$ para cualquier instante del	
+	tiempo t, por lo que $S'(t) \leq S_{0}$ para $t \geq 0$.Si consideramos 	$S_{0} < \frac{\gamma}{\beta}$ siempre se cumple que $I' \left(t\right) 	= I \left( \beta S-\gamma\right) \leq 0$ por lo que $I_{0}\geq 	
+	I \left(t\right)$ para $t \geq 0$. \hfill \break
+	
+	De $S_{0} < \frac{\gamma}{\beta}$ obtenemos $\frac{\beta S}{\gamma}<1$
+	así entonces podemos concluir que no habrá brote epidémico.
+	\hfill \break
+	
+	Al cociente $\frac{\beta S}{\gamma}$ lo denotaremos como $R_{0}$, 
+	el cual es conocido como número reproductivo básico de la infección.
+	\nocite{keeling2011modeling}
+	
+	
+	\bibliographystyle{plain}
+	\bibliography{referencias}
+	
+\end{document}
