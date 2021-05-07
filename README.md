@@ -1,2 +1,2 @@
 # Tesis
- Se subiran los progresos 
+ Se subirán los progresos 
