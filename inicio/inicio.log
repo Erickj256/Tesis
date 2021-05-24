@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.26)  28 APR 2021 18:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.24)  24 MAY 2021 01:51
 entering extended mode
 **./inicio.tex
 (inicio.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
+L3 programming layer <2021-05-11>
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
@@ -28,13 +28,13 @@ Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@posthook=\toks16
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2021/04/07 3.57 The Babel package
+Package: babel 2021/05/16 3.59 The Babel package
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2021/04/07 3.57 Babel common definitions
+File: babel.def 2021/05/16 3.59 Babel common definitions
 \babel@savecnt=\count188
 \U@D=\dimen139
-\l@babelnohyphens=\language79
+\l@unhyphenated=\language79
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
@@ -164,9 +164,9 @@ y
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
 sty
@@ -196,7 +196,7 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 sty
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
@@ -230,31 +230,31 @@ filtered.code.tex
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count274
 \pgfsyssoftpath@bigbuffer@items=\count275
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 e.code.tex
-Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
@@ -297,7 +297,7 @@ ions.integerarithmetics.code.tex)))
 tex)
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
-File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen164
 \pgf@picmaxx=\dimen165
 \pgf@picminy=\dimen166
@@ -315,19 +315,19 @@ File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen178
 \pgf@path@lasty=\dimen179
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen180
 \pgf@shorten@start@additional=\dimen181
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
-File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box51
 \pgf@hbox=\box52
 \pgf@layerbox@main=\box53
@@ -335,83 +335,83 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen182
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen183
 \pgf@pt@y=\dimen184
 \pgf@pt@temp=\dimen185
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
-File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
-File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen186
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
-File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen187
 \pgf@sys@shading@range@num=\count279
 \pgf@shadingcount=\count280
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
-File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box54
 ))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
-File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 erdf.code.tex
-File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box55
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
-File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen188
 \pgf@nodesepend=\dimen189
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
 y
@@ -424,7 +424,7 @@ ty
 .tex))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
-Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
@@ -435,11 +435,11 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
-Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count281
 \pgfplotmarksize=\dimen192
 )
@@ -462,7 +462,7 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
-File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmatrixcurrentrow=\count286
 \pgfmatrixcurrentcolumn=\count287
 \pgf@matrix@numberofcolumns=\count288
@@ -471,7 +471,7 @@ File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -482,7 +482,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowinset=\dimen257
 \pgfarrowlength=\dimen258
 \pgfarrowwidth=\dimen259
@@ -490,7 +490,7 @@ File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \c@defi=\count291
 \c@cor=\count292
@@ -546,7 +546,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count298
 \l__pdf_internal_box=\box60
 ) (inicio.aux
@@ -700,43 +700,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
  []
 
+<imagenes/beta15.png, id=14, 722.7pt x 469.755pt>
+File: imagenes/beta15.png Graphic file (type png)
+<use imagenes/beta15.png>
+Package pdftex.def Info: imagenes/beta15.png  used on input line 133.
+(pdftex.def)             Requested size: 227.62206pt x 147.9521pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--140
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
+
+ []
+
+[2 <./imagenes/beta15.png>]
+<imagenes/beta05.png, id=24, 722.7pt x 469.755pt>
+File: imagenes/beta05.png Graphic file (type png)
+<use imagenes/beta05.png>
+Package pdftex.def Info: imagenes/beta05.png  used on input line 149.
+(pdftex.def)             Requested size: 227.62206pt x 147.9521pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Package natbib Warning: Citation `keeling2011modeling' undefined on input line 
-143.
+Underfull \hbox (badness 10000) in paragraph at lines 157--160
 
-(inicio.bbl [2])
+ []
 
-Package natbib Warning: There were undefined citations.
+(inicio.bbl [3 <./imagenes/beta05.png>] [4
 
-[3
-
-] (inicio.aux
+]) [5] (inicio.aux
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
-
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 ) ) 
 Here is how much of TeX's memory you used:
- 15148 strings out of 479321
- 294959 string characters out of 2856583
- 589996 words of memory out of 3000000
- 32332 multiletter control sequences out of 15000+600000
+ 15252 strings out of 479163
+ 297290 string characters out of 2853998
+ 593530 words of memory out of 3000000
+ 32590 multiletter control sequences out of 15000+600000
  412000 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,8n,116p,436b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,8n,104p,436b,855s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmmi12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/
@@ -750,9 +758,9 @@ saf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
 cm/cmti12.pfb>
-Output written on inicio.pdf (3 pages, 124772 bytes).
+Output written on inicio.pdf (5 pages, 201292 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
