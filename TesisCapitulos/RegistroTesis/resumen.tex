@@ -1,0 +1,67 @@
+\documentclass[a4paper,openany,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\parindent}{0mm}
+\title{Resumen de Tesis}
+\date{}
+\author{Erick Josafat vergara Huerta}
+
+\begin{document}
+\maketitle
+
+El presente trabajo con propuesta de titulo \guillemotleft  \texttt{Una modelación basada en agentes de la propagación de una enfermedad según el modelo SIR}\guillemotright, tiene como su principal objetivo realizar una modelación basada en agentes de la pandemia de La Covid-19 en la Ciudad de México durante los meses de octubre-diciembre del año 2020.\\
+
+Para cumplir con este objetivo, es necesario en primera instancia aclarar los conceptos de los fenómenos naturales conocidos como endemias, epidemias y pandemias, una vez estudiados estos conceptos, procederemos a establecer una herramienta que es bastante útil a la hora de modelar este tipo de fenómenos, el cual es conocido como el modelo SIR, este modelo esta representado por un sistema de ecuaciones diferenciales ordinarias (representado por las ecuaciones 1,2 y 3) y tiene como idea principal dividir a la población en tres compartimentos. El primer compartimento es conocido como los Susceptibles (S) el cual representa a la población que puede adquirir la enfermedad, el segundo compartimento es el de los Infectados (I) que son aquellas personas que ya adquirieron la enfermedad, y por último el compartimento de las personas Recuperadas (R)personas que se recuperaron de la enfermedad.
+
+\begin{align}
+S' = -\beta S\left(t\right)I\left(t\right)\\ 			
+I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)
+\\ 
+R' = \gamma I\left(t\right)
+\end{align} 
+
+Donde S, I, R son los compartimentos establecidos previamente, gamma es la tasa de recuperación, y beta es la tasa de contagio. Daremos solución al sistema de ecuaciones numéricamente mediante su discretización como ecuaciones en diferencias y realizaremos una estimación para encontrar los valores de beta y gamma ya que estos parámetros son de suma importancia para el modelo y también estudiaremos el parámetro $R_{0}$ que es aquel que nos indica cuando se establece que una enfermedad sea pandemia o no.
+Esto con la finalidad de establecer la relación en que la matemática modela la naturaleza de estos fenómenos biológicos.\\
+
+Una vez establecido el panorama del modelo SIR, Utilizaremos la base de datos que puso a disposición el gobierno de la Ciudad de México y utilizando el lenguaje de programación Python realizaremos un análisis exploratorio de datos de esta base para describir la información que contiene. Posteriormente una vez hecho este análisis realizaremos una modelación basada en agentes en el lenguaje de programación Netlogo, donde realizaremos una abstracción del metro de la Ciudad de México y definiremos las reglas que seguirá cada agente para que pueda simular lo ocurrido durante la pandemia.\\
+
+Por último concluiremos realizando una comparación entre nuestro modelo de agentes y nuestro análisis exploratorio de la base de la CDMX para evaluar la calidad de la simulación y proponer aspectos a mejorar.\\
+
+Este trabajo de tesis estará conformado de la siguiente manera:
+\begin{itemize}
+\item Introducción
+\item Capitulo 1: Modelos Compartimentales
+\item Capitulo 2: Análisis de los datos de la Ciudad de México
+\item Capitulo 3: Modelación basada en agentes
+\item Capitulo 4: Comparación del modelo contra los datos de la Ciudad de México
+\item Conclusiones
+\item Anexo (Códigos)
+\end{itemize}
+
+\begin{thebibliography}{5}
+
+\bibitem{MBA}
+Aguilera. A and Posadas. M. Introducción al modelado basado en agentes: Una aproximación desde Netlogo. El Colegio de San Luis, 2017.
+
+\bibitem{MME}
+Brauer. F, Castillo. C, and Feng. Z Mathematical Models in Epidemiology. Text in Applied Mathematics. Springer New York, 2019
+
+\bibitem{MBA2}
+García. J.M. Modelos Basados en Agentes I: Introducción práctica al análisis del comportamiento de sistemas complejos. Amazon Digital Services LLC-KDP Print US, 2021.
+
+\bibitem{CMP}
+Luque. B, Ballesteros. F, and Miramontes. O. Cómo modelizar una pandemia. Investigación y ciencia, pages 54-60, 2020
+
+\bibitem{IME}
+Martcheva M. An introduction to Mathematical Epidemiology. Text in Applied Mathematics, Sptringer US, 2015 
+
+\bibitem{HFP}
+Sanchez. M. Historia y futuro de las pandemias. Revista Medica Clinica Los Condes, pages 7-13, 2021
+
+\end{thebibliography}
+\end{document}

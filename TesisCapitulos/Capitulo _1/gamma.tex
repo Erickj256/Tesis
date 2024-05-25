@@ -1,0 +1,68 @@
+\documentclass[a4paper,openany,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\newtheorem{defi}{Definición}[section]
+\newtheorem{cor}{Corolario}[section]
+\newtheorem{lem}{Lema}[section]
+\newtheorem{teo}{Teorema}[section]
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\parindent}{0mm}
+
+\title{Avances}
+\author{jos256 }
+\date{April 2021}
+
+\begin{document}
+\section*{tasa de recuperación}
+La tasa de recuperación se puede interpretar como el tiempo aproximado de duración de la enfermedad.\\
+
+Recordemos nuestro sisstema de ecuaciones que representa al modelo SIR.\\
+
+\begin{align}
+S' = -\beta S\left(t\right)I\left(t\right)\\			
+I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)\\		
+R' = \gamma I\left(t\right)
+\end{align}
+
+
+Partiendo de la ecuación 3 de nuestro sistema de ecuaciones tendremos lo siguiente:
+
+\begin{equation}
+R' = \gamma I\left(t\right) \approx \frac{R(t+h) - R(t)}{h}
+\end{equation}
+
+despejando la ecuacion 4 y tomando $h = \frac{1}{\alpha}$ se tiene:
+
+\begin{equation}
+R(t+\frac{1}{\alpha}) = R(t) + I(t)
+\end{equation}
+
+La ecuación 5 representa a la cantidad de personas recuperadas en el instante t + $\frac{1}{\alpha}$ el cual es la suma de los recuperados en el instante t más todos los individuos que estaban infectados en el instante t, donde podemos concluir que $\frac{1}{\alpha}$ es el tiempo promedio que tardan en recuperarse las personas infectadas.\\
+
+¿Pero como podemos concluir que $\frac{1}{\alpha}$ es la tasa de recuperación?\\
+Para responder esto, partamos de la ecuacion 2. donde asumimos que ya no estan personas infectadas pero un cierto numero de individuos estan pasando al compartimento de recuperados, por lo que se tiene:
+
+\begin{align}
+I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)\\	
+I' = - \gamma I\left(t\right)
+\end{align}
+
+
+si resolvemos la ecuacion 7 por el metodo de variables separables, podemos deducir la cantidad de personas que se encuentran en el compartimento de los infectados durante el tiempo t, obteniendo:
+
+
+\begin{align}
+I = I_{0}e^{\alpha t}
+\end{align}
+
+
+
+\end{document}

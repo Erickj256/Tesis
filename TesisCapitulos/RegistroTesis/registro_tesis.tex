@@ -1,0 +1,97 @@
+\documentclass[a4paper,openany,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\setlength{\parindent}{0mm}
+\title{Resumen de Tesis}
+\date{}
+\author{Erick Josafat vergara Huerta}
+
+\begin{document}
+\maketitle
+
+
+El presente trabajo tentativamente titulado \guillemotleft  \texttt{Una modelación basada en agentes de la influencia del metro en la propagación de la Covid-19}\guillemotright, tiene como objetivo principal realizar una modelación basada en agentes de la pandemia de la enfermedad causada por el virus SARS-CoV-2 en la Ciudad de México, analizando cómo es que el transporte público “METRO” de la ciudad pudo haber influido en la propagación del virus. Para ello se propondrán una serie de reglas discretas para determinar el comportamiento de los agentes, y se comparán resultados parciales de la simulación con las predicciones que arroja el modelo SIR.\\
+
+En una primera instancia comenzaremos dando un panorama sobre las enfermedades y cómo es que estas al contagiar a una gran cantidad de personas en una determinada población pasan a considerarse epidemias o pandemias.\\
+
+Posteriormente definiremos y desarrollaremos al modelo SIR como ejemplar representativo de los modelos comparticionales, presentando los parámetros requeridos por el modelo y resolviendo numéricamente las ecuaciones diferenciales que lo constituyen, mediante su discretización como ecuaciones en diferencias. Para lograr este objetivo debemos tener una base sólida en el campo de las ecuaciones diferenciales, que a su vez se relacionan con la materia de cálculo diferencial e integral. \\
+
+Una vez establecido el tema de los modelos comparticionales, utilizaremos los datos que puso a disposición el gobierno de la Ciudad de México para realizar un análisis estadístico, donde implementaremos los minimos cuadrados y el error absoluto medio para estimar los parametros del modelo con la finalidad de estudiar el comportamiento que tuvo la epidemia durante su periodo de mayor intensidad. Para llevar a cabo este análisis necesitaremos los conocimientos estadísticos.\\
+
+Desarrollaremos también la modelación basada en agentes, donde estableceremos las reglas que definirán el comportamiento de la población en nuestra simulación de la epidemia, esto con base en los modelos comparticionales. Una vez establecida esta regla se creará una simulación de la epidemia en la Ciudad de México junto con la red del metro en el lenguaje NetLogo, para observar cómo es que el metro de la ciudad pudo influir en la transmisión de la enfermedad.\\ Para establecer la red del metro es necesario tener conocimientos en gráficas, así mismo para establecer las reglas del modelo es necesario tener conocimientos en sistemas dinámicos. \\
+
+\newpage
+
+Este trabajo de tesis estará conformado de la siguiente manera:
+\begin{itemize}
+\item Introducción
+\item Capítulo 1: Modelo SIR
+	\begin{itemize}
+		\item {Definicioón del modelo}
+		\item {Parámetros}
+		\item {Metodología para la estimación de parámetros}
+	\end{itemize}
+\item Capítulo 2: Análisis de los datos de la Ciudad de México
+	\begin{itemize}
+		\item {Preparación de los datos}
+		\item {Ajuste del modelo SIR}
+	\end{itemize}
+\item Capítulo 3: Modelación basada en agentes
+	\begin{itemize}
+		\item {Teoría de la modelación basada en agentes}
+		\item {Especificación del mundo}
+		\item {Reglas de evolución}
+		\item {Implementación de la simulación}
+	\end{itemize}
+\item Capítulo 4: Comparación del modelo contra los datos de la Ciudad de México
+	\begin{itemize}
+		\item {Comparación con el modelo SIR}
+		\item {Efecto de la presencia del METRO}
+	\end{itemize}
+\item Conclusiones
+\item Anexo (Derivaciones y Códigos)
+\end{itemize}
+
+
+\begin{thebibliography}{5}
+
+\bibitem{MBA}
+Aguilera. A and Posadas. M. Introducción al modelado basado en agentes: Una aproximación desde Netlogo. El Colegio de San Luis, 2017.
+
+\bibitem{BBN}
+Báez. S.A. and Bobko. N. Analysis of infected population threshold exceedance in an SIR epidemiological model. Department of Mathematics, Federal University of Technology, 2020  
+
+\bibitem{MME}
+Brauer. F, Castillo. C, and Feng. Z Mathematical Models in Epidemiology. Text in Applied Mathematics. Springer New York, 2019
+
+\bibitem{MBA2}
+García. J.M. Modelos Basados en Agentes I: Introducción práctica al análisis del comportamiento de sistemas complejos. Amazon Digital Services LLC-KDP Print US, 2021.
+
+\bibitem{}
+Kuhl. E. Computational Epidemiology Data-Driven Modelling of COVID-19, Springer, 2021.
+
+\bibitem{CMP}
+Luque. B, Ballesteros. F, and Miramontes. O. Cómo modelizar una pandemia. Investigación y ciencia, pages 54-60, 2020
+
+\bibitem{IME}
+Martcheva M. An introduction to Mathematical Epidemiology. Text in Applied Mathematics, Sptringer US, 2015 
+
+\bibitem{MH}
+Mohajan, Haradhan. Mathematical Analysis of SIR Model for COVID-19 Transmission. Published in: Journal of Innovations in Medical Research , Vol. 1, No. 2 (31 August 2022): pp. 1-18. 
+
+\bibitem{MGG}
+Murillo-Godínez G. Breve historia de las epidemias y pandemias infecciosas. Med Int Méx. 2021; 37 (6): 1045-1051.
+
+\bibitem{RD}
+Rosselli. D. Epidemiología de las pandemias. Departamento de Epidemiología Clínica y Bioestadística, Facultad de Medicina, Pontificia Universidad Javeriana, 2020 
+
+\bibitem{HFP}
+Sanchez. M. Historia y futuro de las pandemias. Revista Medica Clinica Los Condes, pages 7-13, 2021
+
+\end{thebibliography}
+\end{document}
