@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.19)  27 MAY 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.19)  27 MAY 2024 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,36 +709,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Overfull \hbox (2.6751pt too wide) detected at line 149
+Overfull \hbox (2.6751pt too wide) detected at line 151
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
 [3]
-LaTeX Info: Redefining \. on input line 189.
-LaTeX Info: Redefining \% on input line 189.
+LaTeX Info: Redefining \. on input line 191.
+LaTeX Info: Redefining \% on input line 191.
  [4]
-LaTeX Info: Redefining \. on input line 234.
-LaTeX Info: Redefining \% on input line 234.
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
  [5] [6
 
 ] (ModelosCompartimentales.aux
@@ -751,32 +751,33 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16142 strings out of 474486
- 323389 string characters out of 5743755
+ 16144 strings out of 474486
+ 323417 string characters out of 5743755
  1939542 words of memory out of 5000000
- 38156 multiletter control sequences out of 15000+600000
- 568237 words of font info for 75 fonts, out of 8000000 for 9000
+ 38158 multiletter control sequences out of 15000+600000
+ 568842 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,107p,481b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/josaf/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/josaf/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/josaf/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/josaf/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jo
-saf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
-sers/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.
-pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmti12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ModelosCompartimentales.pdf (6 pages, 182291 bytes).
+fonts/cm/cmbxsl10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmex10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/josaf/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/josaf/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/josaf/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/josaf
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/User
+s/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+8.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsl12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/josaf/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on ModelosCompartimentales.pdf (6 pages, 192082 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
