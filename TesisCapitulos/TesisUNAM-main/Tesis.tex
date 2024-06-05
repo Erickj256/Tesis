@@ -7,7 +7,20 @@
 
 % Include any extra LaTeX packages required
 \usepackage[square, numbers, comma, sort&compress]{natbib}  % Use the "Natbib" style for the references in the Bibliography
-\usepackage[amsmath, amsfonts, amssymb, tikz]{}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+\newtheorem{defi}{Definición}[section]
+\newtheorem{cor}{Corolario}[section]
+\newtheorem{lem}{Lema}[section]
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{Af}{Afirmación}
+\newcommand{\Dem}{\textbf{Demostración:}}
+
 \title{Título de la tesis}
 \author{Erick Josafat Vergara Huerta}
 \modalidad{T E S I S}
@@ -37,7 +50,7 @@
 \pagestyle{fancy} 
 
 %% ----------------------------------------------------------------
-%\tableofcontents  % Write out the Table of Contents
+\tableofcontents  % Write out the Table of Contents
 
 %% ----------------------------------------------------------------
 %\listoffigures  % Write out the List of Figures
@@ -90,7 +103,7 @@
 
 \input{./Capitulos/introduccion} % Introduction
 
-%\input{./Capitulos/Capitulo1} % Modelos compartimentales y modelo SIR
+\input{./Capitulos/Capitulo1} % Modelos compartimentales y modelo SIR
 
 %\input{./Chapters/Chapter2} % Background Theory 
 
