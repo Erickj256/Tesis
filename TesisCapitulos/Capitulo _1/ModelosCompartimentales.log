@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.19)  27 MAY 2024 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.19)  7 JUN 2024 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -189,7 +189,21 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
+(C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
+(C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count281
+))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
@@ -259,14 +273,14 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen174
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count281
-\c@pgf@countb=\count282
-\c@pgf@countc=\count283
-\c@pgf@countd=\count284
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count285
+\pgf@sys@id@count=\count286
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -285,8 +299,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count286
-\pgfsyssoftpath@bigbuffer@items=\count287
+\pgfsyssoftpath@smallbuffer@items=\count287
+\pgfsyssoftpath@bigbuffer@items=\count288
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -303,7 +317,7 @@ code.tex)
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen175
-\pgfmath@count=\count288
+\pgfmath@count=\count289
 \pgfmath@box=\box55
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
@@ -331,7 +345,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count289
+\c@pgfmathroundto@lastzeros=\count290
 ))
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -371,7 +385,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count290
+\pgf@picture@serial@count=\count291
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -406,8 +420,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen199
-\pgf@sys@shading@range@num=\count291
-\pgf@shadingcount=\count292
+\pgf@sys@shading@range@num=\count292
+\pgf@shadingcount=\count293
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -477,7 +491,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count293
+\pgf@plot@mark@count=\count294
 \pgfplotmarksize=\dimen260
 )
 \tikz@lastx=\dimen261
@@ -492,19 +506,19 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count294
-\tikznumberofchildren=\count295
-\tikznumberofcurrentchild=\count296
-\tikz@fig@count=\count297
+\tikztreelevel=\count295
+\tikznumberofchildren=\count296
+\tikznumberofcurrentchild=\count297
+\tikz@fig@count=\count298
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count298
-\pgfmatrixcurrentcolumn=\count299
-\pgf@matrix@numberofcolumns=\count300
+\pgfmatrixcurrentrow=\count299
+\pgfmatrixcurrentcolumn=\count300
+\pgf@matrix@numberofcolumns=\count301
 )
-\tikz@expandcount=\count301
+\tikz@expandcount=\count302
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -522,11 +536,11 @@ File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
 z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@defi=\count302
-\c@cor=\count303
-\c@lem=\count304
-\c@teo=\count305
-\c@Af=\count306
+\c@defi=\count303
+\c@cor=\count304
+\c@lem=\count305
+\c@teo=\count306
+\c@Af=\count307
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
@@ -554,9 +568,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count307
-\Gm@cntv=\count308
-\c@Gm@tempcnt=\count309
+\Gm@cnth=\count308
+\Gm@cntv=\count309
+\c@Gm@tempcnt=\count310
 \Gm@bindingoffset=\dimen273
 \Gm@wd@mp=\dimen274
 \Gm@odd@mp=\dimen275
@@ -572,44 +586,44 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count310
+\l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box65
 ) (ModelosCompartimentales.aux
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
 )
 \openout1 = `ModelosCompartimentales.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
+\scratchcounter=\count312
 \scratchdimen=\dimen281
 \scratchbox=\box66
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count313
+\nofMParguments=\count314
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count314
+\MPscratchCnt=\count315
 \MPscratchDim=\dimen282
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks40
 )
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -657,37 +671,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (C:\Users\josaf\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -700,50 +689,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 {C:/Users/josaf/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
-
- []
-
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-
-Overfull \hbox (2.6751pt too wide) detected at line 151
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [2]
+Overfull \hbox (2.6751pt too wide) detected at line 153
 []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-LaTeX Info: Redefining \. on input line 160.
-LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
 [3]
-LaTeX Info: Redefining \. on input line 191.
-LaTeX Info: Redefining \% on input line 191.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
  [4]
 LaTeX Info: Redefining \. on input line 236.
 LaTeX Info: Redefining \% on input line 236.
  [5] [6
 
 ] (ModelosCompartimentales.aux
-LaTeX Info: Redefining \. on input line 4.
-LaTeX Info: Redefining \% on input line 4.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -751,13 +716,13 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16144 strings out of 474486
- 323417 string characters out of 5743755
- 1939542 words of memory out of 5000000
- 38158 multiletter control sequences out of 15000+600000
+ 16864 strings out of 474486
+ 334740 string characters out of 5743755
+ 1938542 words of memory out of 5000000
+ 38859 multiletter control sequences out of 15000+600000
  568842 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,481b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,11n,107p,535b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbxsl10.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1
@@ -775,7 +740,7 @@ C:/Users/josaf/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 e1/public/amsfonts/cm/cmsy8.pfb><C:/Users/josaf/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/josaf/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on ModelosCompartimentales.pdf (6 pages, 192082 bytes).
+Output written on ModelosCompartimentales.pdf (6 pages, 192120 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

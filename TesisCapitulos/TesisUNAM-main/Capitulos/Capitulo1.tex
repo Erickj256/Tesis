@@ -1,48 +1,20 @@
-%\documentclass[a4paper,openany,12pt]{book}
-%\usepackage[utf8]{inputenc}
-%\usepackage[spanish,es-noshorthands]{babel}
-%\usepackage{amsmath}
-%\usepackage{mathtools}
-%\usepackage{amsfonts}
-%\usepackage{amssymb}
-%\usepackage{xcolor}
-%\usepackage{tikz}
-%\usetikzlibrary{arrows.meta,positioning}
-%\newtheorem{defi}{Definición}[section]
-%\newtheorem{cor}{Corolario}[section]
-%\newtheorem{lem}{Lema}[section]
-%\newtheorem{teo}{Teorema}[section]
-%\newtheorem{Af}{Afirmación}
-%\newcommand{\Dem}{\textbf{Demostración:}}
-%\renewcommand{\thefootnote}{\alph{footnote}}
-%\usepackage{ragged2e}
-%\usepackage{graphicx}
-%\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
-%\setlength{\parindent}{0mm}
-
-
-%\begin{document}
-
 \chapter{Modelo SIR}
 
-Antes de establecer el modelo SIR, es importante conocer o tener la idea principal sobre lo que es un modelo compartimental, por lo que se podría definir de la siguiente manera.\\
+Antes de establecer el modelo SIR, es importante conocer o entender la idea principal sobre estos modelos que son usados con bastante frecuencia en la epidemiología. Podemos definir a los modelo compartimentales como la segmentación de nuestra población en conjuntos o compartimentos que representarán el estado en que se encuentra nuestra población a estudiar, así mismo es importante mencionar que estos modelos son deterministicos por lo que las mismas entradas producirán las mismas salidas o en otras palabras el azar no es contemplano.  
 
-Los modelos compartimentales suelen ser modelos determinísticos, esto indica que las mismas entradas producirán las mismas salidas por lo que no es contemplado el azar. Este tipo de modelos nos permmiten segmentar a la población en conjuntos específicos durante el desarrollo de la epidemia, los tres conjuntos basicos son:
+Con esta idea en mente, el principal objetivo de estos compartimentos es describir y modelar cada uno de los estados por los que pasara la población ante una enfermedad, por lo que podemos establecer tres conjuntos o compartimentos basicos que son:
 
 \begin{itemize}
-\item \textbf{Suceptible:} Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.\\
+\item \textbf{Suceptible:} Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.
 
-\item \textbf{Infectado:} Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la infección.\\
+\item \textbf{Infectado:} Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la infección.
 
 \item \textbf{Recuperado:} Representa el número de personas recuperadas, personas que se han recuperado en su totalidad de la infección y puden o no generar inmunidad.
 \end{itemize}
 
-Su principal objetivo es describir y modelar cada uno de los estados por los que pasara la población al contraer la infección.
-Los compartimentos reciben su nombre del flujo que existe entre los diferentes conjuntos en los que se clasifica a la población y suelen ser expresados matematicamente por ecuaciones diferenciales (EDO).\\
-
 \section{Conociendo el modelo SIR}
 
-El modelo epidemiológico SIR  esta constituido por tres compartimientos que son, suceptible, infectado y recuperado, por lo que considera que toda la población comienza en un estado suceptible, luego de infectarse pasara al compartimiento de los infectados y por ultimo se genera una inmunidad a la enfermedad por lo que pasa al compartimiento de los recuperados, por lo que su modelo compartimental es de la siguiente manera.\\
+El modelo epidemiológico SIR  esta constituido por tres compartimientos que son, suceptible, infectado y recuperado, por lo que considera que toda la población comienza en un estado suceptible, luego de infectarse pasara al compartimiento de los infectados y por ultimo se genera una inmunidad a la enfermedad por lo que pasa al compartimiento de los recuperados, por lo que su modelo compartimental es de la siguiente manera.
 
 
 \begin{figure}[h]
@@ -66,7 +38,7 @@ I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)\\
 R' = \gamma I\left(t\right)
 \end{align}
 
-Este modelo se ha usado con mayor frecuencía para conocer el comportamiento de las epidemias, un ejemplo reciente fué la pandemia provocada por el SARS-COV2 \cite{Martcheva}.\\
+Este modelo se ha usado con mayor frecuencía para conocer el comportamiento de las epidemias, un ejemplo reciente fué la pandemia provocada por el SARS-COV2 \cite{Martcheva}.
 
 Una parte fundamental de los modelos compartimentales son sus parametros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar.\\
 
@@ -116,7 +88,8 @@ Con estas ecuaciones previamente obtenidas podemos calcular de forma probabilist
 F(t) = 1 -  e^{-\gamma t} \hspace{1cm} t \geq  0
 \end{align}
 
-definiendo la función de desidad en el intervalo [0,t) de la siguiente forma.\\
+definiendo la función de desidad en el intervalo [0,t) de la siguiente forma.
+
 \begin{equation*}
 F(t) =
 \begin{cases*}
@@ -125,7 +98,7 @@ F(t) =
 \end{cases*}
 \end{equation*}
 
-y dado que el tiempo promedio que pasa una persona en el compartimento de los infectados está dado por valor el esperado, así obtenemos que el parametro $\gamma$ se encuentra definido como: \\
+y dado que el tiempo promedio que pasa una persona en el compartimento de los infectados está dado por valor el esperado, así obtenemos que el parametro $\gamma$ se encuentra definido como:
 
 \begin{align}
 E[X] = \int \limits_{0}^{\infty} tf(t)dt = \int \limits_{0}^{\infty} t\gamma e^{-\gamma t} dt = \frac{1}{\gamma}
@@ -155,7 +128,7 @@ Para mostrar que en efecto $\frac{1}{\gamma}$ es el tiempo que permanece una per
 
 \end{Dem}
 
-Podemos concluir que $\gamma$ \footnote{el resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la enfermedad, por tanto tenemos que $\gamma = \frac{1}{d}$.\\
+Podemos concluir que $\gamma$ \footnote{el resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la enfermedad, por tanto tenemos que $\gamma = \frac{1}{d}$.
 
 Con el resultado previo y utilizando la ecuacion 1.7, podemos establecer la siguiente afirmación.
 
@@ -188,8 +161,6 @@ R\left( t + \frac{1}{\gamma} \right) = R(t) + I(t)
 \end{Dem}
 
 Con este ultimo resultado podemos interpretar que el número de individuos recuperados en un determinado tiempo $t + \frac {1}{\gamma}$  es la suma de las personas que se recuperarón en un tiempo t más las personas infectadas en el tiempo t.
-
-\newpage
 
 \subsection{\textbf{Tasa de contagio}}
 
