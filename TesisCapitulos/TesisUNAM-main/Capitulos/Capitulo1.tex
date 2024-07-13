@@ -1,21 +1,8 @@
-\chapter{Modelo SIR}
+\chapter{\textbf{Modelo SIR}}
 
-Antes de establecer el modelo SIR, es importante conocer o entender la idea principal sobre estos modelos que son usados con bastante frecuencia en la epidemiología. Podemos definir a los modelo compartimentales como la segmentación de nuestra población en conjuntos o compartimentos que representarán el estado en que se encuentra nuestra población a estudiar, así mismo es importante mencionar que estos modelos son deterministicos por lo que las mismas entradas producirán las mismas salidas o en otras palabras el azar no es contemplano.  
+Antes de establecer el modelo SIR, es importante conocer o entender la idea principal sobre estos modelos que son usados con bastante frecuencia en la epidemiología. Podemos definir a los modelo compartimentales como la segmentación de nuestra población en conjuntos o compartimentos disjuntos que describen el estado de salud en el que se encuentra una población ante la propagación de una enfermedad, así mismo es importante mencionar que estos modelos son deterministas por lo que las mismas entradas producirán las mismas salidas o en otras palabras el azar no es contemplado.
 
-Con esta idea en mente, el principal objetivo de estos compartimentos es describir y modelar cada uno de los estados por los que pasara la población ante una enfermedad, por lo que podemos establecer tres conjuntos o compartimentos basicos que son:
-
-\begin{itemize}
-\item \textbf{Suceptible:} Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.
-
-\item \textbf{Infectado:} Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la infección.
-
-\item \textbf{Recuperado:} Representa el número de personas recuperadas, personas que se han recuperado en su totalidad de la infección y puden o no generar inmunidad.
-\end{itemize}
-
-\section{Conociendo el modelo SIR}
-
-El modelo epidemiológico SIR  esta constituido por tres compartimientos que son, suceptible, infectado y recuperado, por lo que considera que toda la población comienza en un estado suceptible, luego de infectarse pasara al compartimiento de los infectados y por ultimo se genera una inmunidad a la enfermedad por lo que pasa al compartimiento de los recuperados, por lo que su modelo compartimental es de la siguiente manera.
-
+El modelo SIR es un modelo compartimental determinista que describe la dinámica de la población al contraer una enfermedad a través de un sistema de ecuaciones diferenciales el cual es representado con el siguiente diagrama de flujo.
 
 \begin{figure}[h]
 \centering
@@ -28,19 +15,33 @@ every node/.append style={align=center},int/.style={draw, minimum 			size=3cm}]
 \path[->] (S) edge node {$\beta I S$} (I)
    			  (I) edge node {$\gamma I$} (R);
 \end{tikzpicture}
-\caption{Modelo Compartimental SIR} \label{fig:Compartimento SIR}
+\caption{Modelo SIR} \label{fig:1.1}
 \end{figure}	
 
-y las ecuaciones diferenciales que corresponden a cada compartimiento son las siguiente: 
+Donde cada una de las cajas representa un compartimento que describe el estado de salud de la población, mientras que las flechas representan el movimiento de los individuos cuando enferman en este caso son:
+
+\begin{itemize}
+\item Suceptible(S): Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.
+
+\item Infectado (I): Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la infección.
+
+\item Recuperado (R): Representa el número de personas recuperadas, personas que se han recuperado en su totalidad de la infección y puden o no generar inmunidad.
+
+\item \textbf{$\beta:$} Tasa de contagio
+
+\item \textbf{$\gamma:$} Tasa de recuperación
+
+\end{itemize}
+
+mientras que su sistema de ecuaciones diferenciales ordinarias que lo representa, esta definido de la siguiente manera:
+
 \begin{align}
 S' = -\beta S\left(t\right)I\left(t\right)\\			
 I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)\\		
 R' = \gamma I\left(t\right)
 \end{align}
 
-Este modelo se ha usado con mayor frecuencía para conocer el comportamiento de las epidemias, un ejemplo reciente fué la pandemia provocada por el SARS-COV2 \cite{Martcheva}.
-
-Una parte fundamental de los modelos compartimentales son sus parametros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar.\\
+Una parte fundamental de los modelos compartimentales son sus parametros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
 
 
 \section{\textbf{Parámetros}}
