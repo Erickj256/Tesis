@@ -209,6 +209,13 @@
   }\end{spacing}
 }
 
+\newcommand\Introducction{
+  \btypeout{Introducction}
+  \thead{\emph{Introducción}}
+  \chapter*{Introducción}
+}
+
+
 %% Aux
 \setcounter{tocdepth}{6}
 \newcounter{dummy}
@@ -276,6 +283,8 @@
   \vfil\vfil\null
   \cleardoublepage
 }
+
+
 
 %%
 %% Lista de dedicatorias
