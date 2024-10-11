@@ -1,6 +1,6 @@
 \chapter{\textbf{Modelo SIR}}
 
-El modelo SIR es un modelo compartimental determinista que es utilizado con bastante frecuencia en la epidemiología. Los modelo compartimentales se definen como la segmentación de nuestra población en conjuntos o compartimentos disjuntos que describen el estado de salud en el que se encuentra una población ante la propagación de una enfermedad, este tipo de modelos no contempla la aleatoriedad.
+El modelo SIR es un modelo compartimental determinista que es utilizado con bastante frecuencia en el área de la epidemiología. Los modelo compartimentales se definen como la segmentación de nuestra población en conjuntos o compartimentos disjuntos que describen el estado de salud en el que se encuentra una población ante la propagación de una enfermedad, este tipo de modelos no contempla la aleatoriedad.
 
 El modelo SIR es un modelo compartimental determinista que describe la dinámica de la población al contraer una enfermedad a través de un sistema de ecuaciones diferenciales el cual es representado con el siguiente diagrama de flujo.
 
@@ -12,13 +12,13 @@ every node/.append style={align=center},int/.style={draw, minimum 			size=3cm}]
 \node [int, right=of S](I) {$I$};
 \node [int, right=of I](R) {$R$};
 \coordinate[right=of I] (out);
-\path[->] (S) edge node {$\beta I S$} (I)
-   			  (I) edge node {$\gamma I$} (R);
+\path[->] (S) edge node {$\beta$} (I)
+   			  (I) edge node {$\gamma$} (R);
 \end{tikzpicture}
 \caption{Modelo SIR} \label{fig:1.1}
 \end{figure}	
 
-Donde cada una de las cajas representa un compartimento que describe el estado de salud de la población, mientras que las flechas representan el movimiento de los individuos cuando enferman en este caso son:
+Donde cada una de las cajas representa un compartimento que describe el estado de salud de la población, mientras que las flechas representan el movimiento de los individuos a traves de los tres compartimentos que en este modelo son:
 
 \begin{itemize}
 \item Suceptible(S): Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.
@@ -33,18 +33,111 @@ Donde cada una de las cajas representa un compartimento que describe el estado d
 
 \end{itemize}
 
+Antes de establecer el sistema de EDO's que representan al modelo SIR es necesario establecer las siguientes suposiciones.
+
+\begin{itemize}
+\item {El estado inicial de la población es suceptible}
+\item {La enfermedad es contagiada de forma directa}
+\item {La población es constante, esto indica que no se consideran los nacimientos ni las defunciones que se producen a lo largo de la infección por tanto
+	   si, denotamos como N al total de la población tendremos que 
+	   \begin{equation} \label{eq1}
+	   N = S + I + R
+	   \end{equation}
+	   }
+\item {La población es cerrada, esto nos indica que no se permite la salida ni el ingreso de personas a la población}
+\item {La población recuperada no pueden reinfectarse provocando que el movimiento de recuperados a suceptibles es nulo}
+\end{itemize}
+
 mientras que su sistema de ecuaciones diferenciales ordinarias que lo representa, esta definido de la siguiente manera:
 
-\begin{align}
-S' = -\beta S\left(t\right)I\left(t\right)\\			
-I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right)\\		
-R' = \gamma I\left(t\right)
-\end{align}
+
+\begin{numcases}{SIR=}
+S' = -\beta S\left(t\right)I\left(t\right) \label{eq1.2}\\			
+I' = \beta S\left(t\right)I\left(t\right) - \gamma I\left(t\right) \label{eq1.3}\\		
+R' = \gamma I\left(t\right) \label{eq1.4}
+\end{numcases}
+
+
+\section{Resultados del modelo SIR}
+Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la infección, la ecuación \ref{eq1.2} es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, en cuanto a la ecuación \ref{eq1.4} es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
+
+Con esto se establece que $\lim_{t \to \infty} S(t) = S(\infty)$ y $\lim_{t \to \infty} R(t) = R(\infty)$ por ultimo se tiene  $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
+
+De este ultimo resultado, hay que recordar que la población infectada se movera al compartimento de los recuperados en un determinado tiempo y como consecuencia nuestro compartimento
+de infectados ya no tendra población estableciendo así la siguiente afirmación.
+
+\begin{Af}
+Las infecciones tienden a desaparecer es decir $I(\infty) = 0$
+\end{Af}
+
+\begin{Dem}
+
+Supongamos que $I(\infty) = \infty$ y considerando la \ref{eq1.4} se tiene que $I(\infty) \gamma > 0$ lo que implica que $R(\infty) = \infty$ pero esto ultimo contradice que $0 \leq R(0) \leq R(t) \leq N$  por tanto podemos concluir que $I(\infty) = 0$
+
+\end{Dem}
+
+\hfill	$\square$
+
+Una de las preguntas que se establece con bastante frecuencia es el tamaño final de la pandemia
+
+\begin{Af}
+El tamaño final de la pandemia esta dado por $R(\infty) = N - S_{\infty}$
+\end{Af}
+
+\begin{Dem}
+
+Usando las ecuaciones \ref{eq1.2} y \ref{eq1.4} y recordando que $S' \leq 0$ y $R' \geq 0$ obtenemos 
+
+\begin{align*}
+\frac{dS}{dR} = \frac{-\beta S}{\gamma}
+\end{align*}
+
+resolviendo por variables separables se tiene:
+
+\begin{align*}
+\int \frac{1}{S} dS = \int \frac{-\beta}{\gamma} dR 
+\end{align*}
+
+\begin{align*}
+\ln(S) = \frac{-\beta}{\gamma} R + C
+\end{align*}
+
+Considerando las condiciones iniciales de S y recordando que $0 \leq R(0) \leq R(t) \leq N$
+
+\begin{align*}
+S = S(0) e^{\frac{-\beta}{\gamma}R}
+\end{align*}
+
+\begin{align*}
+S = S(0) e^{\frac{-\beta}{\gamma}R} \geq S(0) e^{\frac{-\beta}{\gamma}N} > 0
+\end{align*}
+
+\begin{align*}
+R(\infty) = N - S_{\infty}
+\end{align*}
+
+\end{Dem}
+
+\hfill	$\square$
+
+Con el transcurso de la pandemia el número de la población suceptible disminuye y como consecuencia el ritmo de las nuevas infecciones disminuye es decir, $S(t)$ cae por debajo de $\frac{\beta}{\gamma}$ y la tasa de recuperación excede a la tasa de infección provocando que $I(t)$ disminuya. Esto siginifica que la pandemia termina por la falta de nuevos infectados y no por la falta de personas suceptibles.
+
+\begin{Af}
+Número máximo de infectados
+\end{Af}
+
+\begin{Af}
+Número reproductivo básico
+\end{Af}
+
+\begin{Af}
+Teorema del umbra
+\end{Af}
+
 
 Una parte fundamental de los modelos compartimentales son sus parametros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
 
-
-\section{\textbf{Parámetros}}
+\section{Parámetros}
 \subsection{Tasa de recuperación \textbf{$\gamma$}}
 
 Para poder encontrar un valor aproximado al parametro $\gamma$, asumiremos que no se estan generando nuevas personas infectadas, por lo que el flujo de personas que entra a este compartimento ha parado obteniendo la siguiente ecuación.
@@ -54,7 +147,9 @@ I' = -\gamma I, \hspace{1cm} I(0) = I_{0}
 \end{align}
 
 \begin{Af}
+
 El número de personas en el compartimento de los infectados esta dado por $\frac{I(t)}{I_{0}} = e^{-\gamma t}$.
+
 \end{Af}
 
 \begin{Dem}
@@ -166,7 +261,7 @@ Con este ultimo resultado podemos interpretar que el número de individuos recup
 \subsection{\textbf{Tasa de contagio}}
 
 \begin{Af}
-Podemos aproximar al parametro $\beta$ a partir de $ln(I) = mt + ln(I_{0})$ \cite{Algeria}
+Podemos aproximar al parametro $\beta$ a partir de $ln(I) = mt + ln(I_{0})$\cite{Algeria}
 \end{Af}
 
 \begin{Dem}
