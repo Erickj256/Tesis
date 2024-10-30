@@ -59,11 +59,11 @@ R' = \gamma I\left(t\right) \label{eq1.4}
 
 
 \section{Resultados del modelo SIR}
-Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la infección, la ecuación \ref{eq1.2} es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, en cuanto a la ecuación \ref{eq1.4} es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
+Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la infección,(\ref{eq1.2}) es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, (\ref{eq1.4}) es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
 
-Con esto se establece que $\lim_{t \to \infty} S(t) = S(\infty)$ y $\lim_{t \to \infty} R(t) = R(\infty)$ por ultimo se tiene  $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
+Con esto se establece que $\lim_{t \to \infty} S(t) = S(\infty)$ y $\lim_{t \to \infty} R(t) = R(\infty)$ concluyendo que $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
 
-De este ultimo resultado, hay que recordar que la población infectada se movera al compartimento de los recuperados en un determinado tiempo y como consecuencia nuestro compartimento
+De este último resultado, hay que recordar que la población infectada se moverá al compartimento de los recuperados en un determinado tiempo y como consecuencia nuestro compartimento
 de infectados ya no tendra población estableciendo así la siguiente afirmación.
 
 \begin{Af}
@@ -72,13 +72,13 @@ Las infecciones tienden a desaparecer es decir $I(\infty) = 0$
 
 \begin{Dem}
 
-Supongamos que $I(\infty) = \infty$ y considerando la \ref{eq1.4} se tiene que $I(\infty) \gamma > 0$ lo que implica que $R(\infty) = \infty$ pero esto ultimo contradice que $0 \leq R(0) \leq R(t) \leq N$  por tanto podemos concluir que $I(\infty) = 0$
+Supongamos que $I(\infty) = \infty$ y considerando (\ref{eq1.4}) se tiene que $I(\infty) \gamma > 0$ lo que implica que $R(\infty) = \infty$ pero esto ultimo contradice que $0 \leq R(0) \leq R(t) \leq N$  por tanto podemos concluir que $I(\infty) = 0$
 
 \end{Dem}
 
 \hfill	$\square$
 
-Una de las preguntas que se establece con bastante frecuencia es el tamaño final de la pandemia
+Una de las preguntas que se establece con bastante frecuencia es el tamaño final de la pandemia %añadir el concepto de R(infinito)
 
 \begin{Af}
 El tamaño final de la pandemia esta dado por $R(\infty) = N - S_{\infty}$
@@ -86,7 +86,7 @@ El tamaño final de la pandemia esta dado por $R(\infty) = N - S_{\infty}$
 
 \begin{Dem}
 
-Usando las ecuaciones \ref{eq1.2} y \ref{eq1.4} y recordando que $S' \leq 0$ y $R' \geq 0$ obtenemos 
+Usando (\ref{eq1.2}) y (\ref{eq1.4}) además de considerar que $S' \leq 0$ y $0 \leq R'$ obtenemos 
 
 \begin{align*}
 \frac{dS}{dR} = \frac{-\beta S}{\gamma}
@@ -120,7 +120,7 @@ R(\infty) = N - S_{\infty}
 
 \hfill	$\square$
 
-Con el transcurso de la pandemia el número de la población suceptible disminuye y como consecuencia el ritmo de las nuevas infecciones disminuye es decir, $S(t)$ cae por debajo de $\frac{\beta}{\gamma}$ y la tasa de recuperación excede a la tasa de infección provocando que $I(t)$ disminuya. Esto siginifica que la pandemia termina por la falta de nuevos infectados y no por la falta de personas suceptibles.
+Con el transcurso de la pandemia el número de población suceptible disminuye y como consecuencia el ritmo de las nuevas infecciones disminuye es decir, $S(t)$ cae por debajo de $\frac{\beta}{\gamma}$ y la tasa de recuperación excede a la tasa de infección provocando que $I(t)$ disminuya. Esto siginifica que la pandemia termina por la falta de nuevos infectados y no por la falta de personas suceptibles.
 
 \begin{Af}
 Número máximo de infectados
@@ -135,12 +135,12 @@ Teorema del umbra
 \end{Af}
 
 
-Una parte fundamental de los modelos compartimentales son sus parametros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
+Una parte fundamental de los modelos compartimentales son sus parámetros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
 
 \section{Parámetros}
 \subsection{Tasa de recuperación \textbf{$\gamma$}}
 
-Para poder encontrar un valor aproximado al parametro $\gamma$, asumiremos que no se estan generando nuevas personas infectadas, por lo que el flujo de personas que entra a este compartimento ha parado obteniendo la siguiente ecuación.
+Para poder encontrar un valor aproximado al parámetro $\gamma$, asumiremos que no se estan generando nuevas personas infectadas, por lo que el flujo de personas que entra a este compartimento ha parado obteniendo la siguiente ecuación.
 
 \begin{align}
 I' = -\gamma I, \hspace{1cm} I(0) = I_{0}
@@ -179,12 +179,12 @@ I = I_{0} e^{- \gamma t}
 
 \end{Dem}
 
-Con estas ecuaciones previamente obtenidas podemos calcular de forma probabilistica la cantidad de personas que han abandonado el compartimento de los infectados.
+Con estas ecuaciones previamente obtenidas podemos calcular de forma probabilística la cantidad de personas que han abandonado el compartimento de los infectados.
 \begin{align}
 F(t) = 1 -  e^{-\gamma t} \hspace{1cm} t \geq  0
 \end{align}
 
-definiendo la función de desidad en el intervalo [0,t) de la siguiente forma.
+Definiendo la función de desidad en el intervalo [0,t) de la siguiente forma.
 
 \begin{equation*}
 F(t) =
@@ -217,14 +217,18 @@ Para mostrar que en efecto $\frac{1}{\gamma}$ es el tiempo que permanece una per
 \end{align*}
 
 \begin{align*}
-\cdots = \lim\limits_{b\rightarrow \infty} \left( \left[ -te^{- \gamma t} - \frac{e^{-\gamma t}}{\gamma} \right]_0^b \right) = \lim\limits_{b\rightarrow \infty} \left[ -be^{- \gamma b} - \frac{e^{- \gamma b}}{\gamma} \right] - \lim\limits_{b\rightarrow \infty} \left[ -(0)e^{- \gamma (0)} - \frac{e^{- \gamma (0)}}{\gamma} \right] = \frac{1}{\gamma}  \\
+\cdots = \lim\limits_{b\rightarrow \infty} \left( \left[ -te^{- \gamma t} - \frac{e^{-\gamma t}}{\gamma} \right]_0^b \right) 
+\end{align*}
+
+\begin{align*}
+\cdots = \lim\limits_{b\rightarrow \infty} \left[ -be^{- \gamma b} - \frac{e^{- \gamma b}}{\gamma} \right] - \lim\limits_{b\rightarrow \infty} \left[ -(0)e^{- \gamma (0)} - \frac{e^{- \gamma (0)}}{\gamma} \right] = \frac{1}{\gamma}  \\
 \end{align*}
 
 \hfill	$\square$
 
 \end{Dem}
 
-Podemos concluir que $\gamma$ \footnote{el resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la enfermedad, por tanto tenemos que $\gamma = \frac{1}{d}$.
+Podemos concluir que $\gamma$ \footnote{El resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la enfermedad, por tanto tenemos que $\gamma = \frac{1}{d}$.
 
 Con el resultado previo y utilizando la ecuacion 1.7, podemos establecer la siguiente afirmación.
 
@@ -256,7 +260,7 @@ R\left( t + \frac{1}{\gamma} \right) = R(t) + I(t)
 \hfill	$\square$
 \end{Dem}
 
-Con este ultimo resultado podemos interpretar que el número de individuos recuperados en un determinado tiempo $t + \frac {1}{\gamma}$  es la suma de las personas que se recuperarón en un tiempo t más las personas infectadas en el tiempo t.
+Con este último resultado podemos interpretar que el número de individuos recuperados en un determinado tiempo $t + \frac {1}{\gamma}$  es la suma de las personas que se recuperarón en un tiempo t más las personas infectadas en el tiempo t.
 
 \subsection{\textbf{Tasa de contagio}}
 
