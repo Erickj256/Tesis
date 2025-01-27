@@ -23,9 +23,9 @@ Donde cada una de las cajas representa un compartimento que describe el estado d
 \begin{itemize}
 \item Suceptible(S): Representa el número de personas suceptibles, personas sanas que al entrar en contacto con la enfermedad pueden contraer la infección.
 
-\item Infectado (I): Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la infección.
+\item Infectado (I): Representa el número de personas infectadas, personas que adquirieron la enfermedad y puden transmitir la enfermedad.
 
-\item Recuperado (R): Representa el número de personas recuperadas, personas que se han recuperado en su totalidad de la infección y puden o no generar inmunidad.
+\item Recuperado (R): Representa el número de personas recuperadas, personas que se han recuperado en su totalidad de la enfermedad y puden o no generar inmunidad.
 
 \item \textbf{$\beta:$} Tasa de contagio
 
@@ -38,7 +38,7 @@ Antes de establecer el sistema de EDO's que representan al modelo SIR es necesar
 \begin{itemize}
 \item {El estado inicial de la población es suceptible}
 \item {La enfermedad es contagiada de forma directa}
-\item {La población es constante, esto indica que no se consideran los nacimientos ni las defunciones que se producen a lo largo de la infección por tanto
+\item {La población es constante, esto indica que no se consideran los nacimientos ni las defunciones que se producen a lo largo de la enfermedad por tanto
 	   si, denotamos como N al total de la población tendremos que 
 	   \begin{equation} \label{eq1}
 	   N = S + I + R
@@ -59,9 +59,100 @@ R' = \gamma I\left(t\right) \label{eq1.4}
 
 
 \section{Resultados del modelo SIR}
-Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la infección,(\ref{eq1.2}) es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, (\ref{eq1.4}) es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
+\subsection{Existencia de limites en el modelo SIR}
+Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la enfermedad,(\ref{eq1.2}) es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, (\ref{eq1.4}) es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
 
-Con esto se establece que $\lim_{t \to \infty} S(t) = S(\infty)$ y $\lim_{t \to \infty} R(t) = R(\infty)$ concluyendo que $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
+Con esto podemos establecer las siguientes afirmaciones:
+
+\begin{Af}
+$\lim_{t \to \infty} S(t) = S_{\infty}$
+\end{Af}
+
+\begin{Dem}
+Notemos que  $0 \leq S(0) \leq S(t) \leq N$ por tanto esta $S(t)$ esta acotada inferiormente, al ser acotada inferiormente en $t \in [0, \infty)$ podemos considerar a $S_{\infty}$ como infimo, por lo que
+ 
+ \begin{align*}
+\forall \epsilon >0  \exists \hat{t} > 0 : S_{\infty} - \epsilon \leq S(\hat{t}) \leq S_{\infty} +  \epsilon
+ \end{align*}
+ 
+Al ser S(t) decreciente 
+
+\begin{align*}
+S_{\infty} - \epsilon \leq S(t) \leq S(\hat{t}) \leq S_{\infty} +  \epsilon  \hspace{1cm} \forall t  > \hat{t} 
+\end{align*}
+
+Por tanto 
+
+\begin{align*}
+\forall \epsilon > 0  \exists \hat{t} > 0 : |S(t) -  S_{\infty}| <  \epsilon \hspace{1cm} \forall t  > \hat{t} 
+\end{align*}
+
+Así entonces
+
+\begin{align*}
+\lim_{t \to \infty} S(t) = S_{\infty}
+\end{align*}
+
+\end{Dem}
+
+\hfill	$\square$
+
+\begin{Af}
+$\lim_{t \to \infty} R(t) = R_{\infty}$
+\end{Af}
+
+\begin{Dem}
+Notemos que al igual que S(t), $0 \leq R(0) \leq R(t) \leq N$ por tanto  $R(t)$ esta acotada superiormente, al ser acotada superiormente en $t \in [0, \infty)$ podemos considerar a $R_{\infty}$ como su supremo, por lo que
+ 
+ \begin{align*}
+\forall \epsilon >0  \exists \hat{t} > 0 : R_{\infty} - \epsilon \leq R(\hat{t}) \leq R_{\infty} +  \epsilon
+ \end{align*}
+ 
+Al ser R(t) creciente 
+
+\begin{align*}
+R_{\infty} - \epsilon \leq R(\hat{t}) \leq R(t) \leq R_{\infty} +  \epsilon  \hspace{1cm} \forall t  > \hat{t} 
+\end{align*}
+
+Por tanto 
+
+\begin{align*}
+\forall \epsilon > 0  \exists \hat{t} > 0 : |R(t) -  R_{\infty}| <  \epsilon \hspace{1cm} \forall t  > \hat{t} 
+\end{align*}
+
+Así entonces
+
+\begin{align*}
+\lim_{t \to \infty} R(t) = R_{\infty}
+\end{align*}
+
+\end{Dem}
+
+\hfill	$\square$
+
+Con estos dos resultados previamente obtenidos, podemos encontrar el $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
+
+\begin{Af}
+$\lim_{t \to \infty} I(t) = I_{\infty} = N - S_{\infty} - R_{\infty}$
+\end{Af}
+
+\begin{Dem}
+
+Considerando que $I (t) = N - S(t) - R(t)$ se tiene que: 
+
+\begin{align*}
+\lim_{t \to \infty} I(t)  = \lim_{t \to \infty}  N - S (t) - R(t) 
+\end{align*}
+
+además tomando $\lim_{t \to \infty} R(t) = R_{\infty}$ y $\lim_{t \to \infty} S(t) = S{\infty}$ podemos concluir que 
+
+\begin{align*}
+ I_{\infty}  = N - S_{\infty} - R_{\infty}
+\end{align*}
+
+\end{Dem}
+
+\hfill	$\square$
 
 De este último resultado, hay que recordar que la población infectada se moverá al compartimento de los recuperados en un determinado tiempo y como consecuencia nuestro compartimento
 de infectados ya no tendra población estableciendo así la siguiente afirmación.
@@ -78,7 +169,54 @@ Supongamos que $I(\infty) = \infty$ y considerando (\ref{eq1.4}) se tiene que $I
 
 \hfill	$\square$
 
-Una de las preguntas que se establece con bastante frecuencia es el tamaño final de la pandemia %añadir el concepto de R(infinito)
+\subsection{Afirmaciones del modelo SIR}
+Con el transcurso de la enfermedad se plantean nuevas preguntas que de cierta forma son naturales y encontrar la respuesta a estas no ayudaría a comprender el cómo transcurre la enfermedad de una forma aproximada y así poder tomar mejores decisiones para afrontarla. Estas preguntas son : ¿Existe un número máximo de infectados?, ¿Cuál es el tamaño final de la pandemia?, ¿Se tiene un resultado que nos permita saber el número de infecciones que causa un individuo? y por último ¿Existe un resultado que nos permita conocer la tendencia del brote?.
+
+Buscaremos dar respuesta a las preguntas planteadas anteriormente, pues conocer la respuesta es de suma importancia para plantear posibles soluciones al brote teniendo así las siguientes afirmaciones.
+
+
+\begin{Af}
+Número máximo de infectados esta dado por $I_{max} = - S(t) + \frac{\gamma}{\beta} ln(S(t)) + I(0) + S(0) - \frac{\gamma}{\beta} ln(S(0))$
+\end{Af}
+
+\begin{Dem}
+
+Tomando el cociente de las ecuaciones (\ref{eq1.2} y \ref{eq1.3})se tiene lo siguiente.
+
+\begin{align*}
+\frac{dI}{dS} = - \frac{\beta SI - \gamma I}{\beta SI} = ...
+\end{align*}
+
+\begin{align*}
+... = -1 + \frac{\gamma}{\beta S}
+\end{align*}
+
+resolviendo por variables separables obtenemos
+
+\begin{align*}
+\int I = \int (-1 + \frac{\gamma}{\beta S} dS = ...
+\end{align*}
+
+\begin{align*}
+... I = - S + \frac{\gamma}{\beta} ln(S) + C
+\end{align*}
+
+Obteniendo que  $C = I(0) + S(0)  - \frac{\gamma}{\beta} ln(S(0))$ considerando condiciones iniciales 
+
+\begin{align*}
+I_{max} = - S(t) + \frac{\gamma}{\beta} ln(S(t)) + I(0) + S(0) - \frac{\gamma}{\beta} ln(S(0))
+\end{align*}
+
+y cómo $I' = 0$  si  $S = \frac{\gamma}{\beta}$ 
+
+\begin{align*}
+I_{max} = \frac{\gamma}{\beta} + \frac{\gamma}{\beta} ln(\frac{\gamma}{\beta}) + I(0) + S(0) - \frac{\gamma}{\beta} ln(S(0))
+\end{align*}
+
+
+\end{Dem}
+
+\hfill	$\square$
 
 \begin{Af}
 El tamaño final de la pandemia esta dado por $R(\infty) = N - S_{\infty}$
@@ -122,18 +260,87 @@ R(\infty) = N - S_{\infty}
 
 Con el transcurso de la pandemia el número de población suceptible disminuye y como consecuencia el ritmo de las nuevas infecciones disminuye es decir, $S(t)$ cae por debajo de $\frac{\beta}{\gamma}$ y la tasa de recuperación excede a la tasa de infección provocando que $I(t)$ disminuya. Esto siginifica que la pandemia termina por la falta de nuevos infectados y no por la falta de personas suceptibles.
 
-\begin{Af}
-Número máximo de infectados
-\end{Af}
+\subsection{Número reproductivo basico,  Tasa de reproducción efectiva  y Teorema del umbral}
+A la expresión $\frac{\beta}{\gamma}$ se le conoce como número reproductivo basico y se define como:
 
-\begin{Af}
-Número reproductivo básico
-\end{Af}
+\begin{align}
+R_{0} = \frac{\beta}{\gamma}
+\end{align}
 
-\begin{Af}
-Teorema del umbra
-\end{Af}
+El cual es el promedio de infecciones causadas por un individuo enfermo en una población durante el tiempo en el que este individuo permanece infeccioso, partir de $R_{0}$ podemos establecer $R_{e}$ el cual es conocido como la Tasa de reproducción efectiva y se definede la siguiente manera  %Brauer
 
+\begin{align}
+R_{e} (t) = S(t)R_{0} 
+\end{align}
+
+La diferencia entre los valores $R_{0}$ y  $R_{e}$, radica en que $R_{0}$ es un valor fijo y ayuda a describir la propagación inicial de la enfermedad en una población completamente suceptible, mientras que $R_{e}$ suele ser dinamico pues refleja la propagación de la enfermedad considerando los cambios de la población suceptible.  
+
+una vez estableciendo estos valores, podemos establcer el Teorema del umbral, este teorema es de suma importancia pues establece la existecia de un valor critico del número de individuos suceptibles en una población a partir del cual se podra determinar la ocurrencia de una epidemia o no
+
+\begin{teo}
+Teorema del umbral.
+
+Si  $R_{e} < 1$ entonces I(t) decrece y no ocurre una epidemia pues la enfermedad sede 
+
+Si  $R_{e} > 1$ entonces I(t) crece rapidamente probocando una epidemia. 
+\end{teo}
+
+\begin{Dem}
+
+Consideremos  el caso cuando  $R_{e} < 1$, si partimos de {\ref{eq1.3}} 
+
+\begin{align*}
+I(t) (\beta S(t) - \gamma)  <  0 
+\end{align*}
+
+ya que  $I'(t) > 0$ y además $I'(t)$ es decreciente  entonces  $(\beta S(t)  - \gamma) < 0$ 
+
+\begin{align*}
+\beta S(t)  < \gamma 
+\end{align*}
+
+\begin{align*}
+S(t)  < \frac{\gamma}{\beta} 
+\end{align*}
+
+\begin{align*}
+R_{0} \cdot S(t)  < \frac{1}{R_{0}} \cdot R_{0}  \hspace{1cm} R_{0} > 0
+\end{align*}
+
+\begin{align*}
+R_{e}  < 1
+\end{align*}
+
+Cuando $R_{e}  < 1$ nos indica que cada individuo infectado genera en promedio menos de un caso nuevo, por lo que la pandemia no puede sostenerse ya que el número de infectados disminuye con el tiempo. 
+
+
+Consideremos  el caso cuando  $R_{e} > 1$, nuevamente partiendo de {\ref{eq1.3}} 
+
+\begin{align*}
+I(t) (\beta S(t) - \gamma)  > 0 
+\end{align*}
+
+\begin{align*}
+\beta S(t)  > \gamma 
+\end{align*}
+
+\begin{align*}
+S(t)  > \frac{\gamma}{\beta} 
+\end{align*}
+
+\begin{align*}
+R_{0} \cdot S(t)  > \frac{1}{R_{0}} \cdot R_{0} \hspace{1cm} R_{0} > 0
+\end{align*}
+
+\begin{align*}
+R_{e}  > 1
+\end{align*}
+
+Cuando $R_{e}  > 1$ nos indica que cada individuo infectado genera en promedio más de un caso nuevo, por lo que la pandemia comienza a crecer con el tiempo. 
+
+\end{Dem}
+
+\hfill	$\square$
 
 Una parte fundamental de los modelos compartimentales son sus parámetros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
 
@@ -228,7 +435,7 @@ Para mostrar que en efecto $\frac{1}{\gamma}$ es el tiempo que permanece una per
 
 \end{Dem}
 
-Podemos concluir que $\gamma$ \footnote{El resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la enfermedad, por tanto tenemos que $\gamma = \frac{1}{d}$.
+Podemos concluir que $\gamma$ \footnote{El resultado de la ecuación 1.10 lo obtenemos en termino de gamma, para no causar confucion dicha gamma se cambia por d, donde d representa los días que tarda una persona en recuperarse de la enfermedad} está definida con el inverso de los días que una persona tarda en recuperarse de la infección, por tanto tenemos que $\gamma = \frac{1}{d}$.
 
 Con el resultado previo y utilizando la ecuacion 1.7, podemos establecer la siguiente afirmación.
 
