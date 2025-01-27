@@ -60,7 +60,7 @@ R' = \gamma I\left(t\right) \label{eq1.4}
 
 \section{Resultados del modelo SIR}
 \subsection{Existencia de limites en el modelo SIR}
-Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la enfermedad,(\ref{eq1.2}) es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, (\ref{eq1.4}) es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$.
+Considerando las suposiciones mencionadas anteriormente podemos notar que existen limites a lo largo de la enfermedad,(\ref{eq1.2}) es decreciente así $S' \leq 0$ y por tanto $0 \leq S(0) \leq S(t) \leq N$, (\ref{eq1.4}) es creciente por lo que $R' \geq 0$ así $0 \leq R(0) \leq R(t) \leq N$ \cite{Foundations}.
 
 Con esto podemos establecer las siguientes afirmaciones:
 
@@ -69,11 +69,11 @@ $\lim_{t \to \infty} S(t) = S_{\infty}$
 \end{Af}
 
 \begin{Dem}
-Notemos que  $0 \leq S(0) \leq S(t) \leq N$ por tanto esta $S(t)$ esta acotada inferiormente, al ser acotada inferiormente en $t \in [0, \infty)$ podemos considerar a $S_{\infty}$ como infimo, por lo que
+Notemos que  $0 \leq S(0) \leq S(t) \leq N$ por tanto $S(t)$ esta acotada inferiormente, al ser acotada inferiormente en $t \in [0, \infty)$ podemos considerar a $S_{\infty}$ como infimo, por lo que
  
- \begin{align*}
+\begin{align*}
 \forall \epsilon >0  \exists \hat{t} > 0 : S_{\infty} - \epsilon \leq S(\hat{t}) \leq S_{\infty} +  \epsilon
- \end{align*}
+\end{align*}
  
 Al ser S(t) decreciente 
 
@@ -130,8 +130,6 @@ Así entonces
 
 \hfill	$\square$
 
-Con estos dos resultados previamente obtenidos, podemos encontrar el $\lim_{t \to \infty} I(t) = I(\infty) = N - S(\infty) - R(\infty)$
-
 \begin{Af}
 $\lim_{t \to \infty} I(t) = I_{\infty} = N - S_{\infty} - R_{\infty}$
 \end{Af}
@@ -158,12 +156,40 @@ De este último resultado, hay que recordar que la población infectada se mover
 de infectados ya no tendra población estableciendo así la siguiente afirmación.
 
 \begin{Af}
-Las infecciones tienden a desaparecer es decir $I(\infty) = 0$
+Las infecciones tienden a desaparecer es decir $I_{\infty} = 0$
 \end{Af}
 
 \begin{Dem}
 
-Supongamos que $I(\infty) = \infty$ y considerando (\ref{eq1.4}) se tiene que $I(\infty) \gamma > 0$ lo que implica que $R(\infty) = \infty$ pero esto ultimo contradice que $0 \leq R(0) \leq R(t) \leq N$  por tanto podemos concluir que $I(\infty) = 0$
+Considerando $\lim_{t \to \infty} R'(t)$ tenemos que
+
+\begin{align*}
+\lim_{t \to \infty} R'(t) = \lim_{t \to \infty}  I (t) \gamma = \gamma I_{\infty}
+\end{align*}
+
+Entonces 
+
+\begin{align*}
+\forall \epsilon, \exists \hat{t} > 0 : |R'(t) - \gamma	I_{\infty}| < \epsilon 
+\end{align*}
+
+Considerando $\epsilon = \frac{\gamma	I_{\infty}}{2}$
+
+\begin{align*}
+ - \frac{\gamma	I_{\infty}}{2} < R'(t) - \gamma	I_{\infty} < \frac{\gamma	I_{\infty}}{2}
+\end{align*}
+
+Sumando  $\gamma I_{\infty}$ tenemos
+\begin{align*}
+R'(t) > \frac{\gamma I_{\infty}}{2} \hspace{1 cm} \forall t > \hat{t}
+\end{align*}
+
+Por ultimo integramos 
+\begin{align*}
+R(t) > \frac{\gamma I_{\infty}}{2} t  + K
+\end{align*}
+
+Lo cual contradice el hecho de que R(t) es acotado, por tanto $I_{\infty} = 0$
 
 \end{Dem}
 
@@ -267,15 +293,15 @@ A la expresión $\frac{\beta}{\gamma}$ se le conoce como número reproductivo ba
 R_{0} = \frac{\beta}{\gamma}
 \end{align}
 
-El cual es el promedio de infecciones causadas por un individuo enfermo en una población durante el tiempo en el que este individuo permanece infeccioso, partir de $R_{0}$ podemos establecer $R_{e}$ el cual es conocido como la Tasa de reproducción efectiva y se definede la siguiente manera  %Brauer
+El cual es el promedio de infecciones causadas por un individuo enfermo en una población durante el tiempo en el que este individuo permanece infeccioso, partir de $R_{0}$ podemos establecer $R_{e}$ el cual es conocido como la Tasa de reproducción efectiva y se definede la siguiente manera  
 
 \begin{align}
 R_{e} (t) = S(t)R_{0} 
 \end{align}
 
-La diferencia entre los valores $R_{0}$ y  $R_{e}$, radica en que $R_{0}$ es un valor fijo y ayuda a describir la propagación inicial de la enfermedad en una población completamente suceptible, mientras que $R_{e}$ suele ser dinamico pues refleja la propagación de la enfermedad considerando los cambios de la población suceptible.  
+La diferencia entre los valores $R_{0}$ y  $R_{e}$, radica en que $R_{0}$ es un valor fijo y ayuda a describir la propagación inicial de la enfermedad en una población completamente suceptible, mientras que $R_{e}$ suele ser dinamico pues refleja la propagación de la enfermedad considerando los cambios de la población suceptible. \cite{Brauer}
 
-una vez estableciendo estos valores, podemos establcer el Teorema del umbral, este teorema es de suma importancia pues establece la existecia de un valor critico del número de individuos suceptibles en una población a partir del cual se podra determinar la ocurrencia de una epidemia o no
+una vez estableciendo estos valores, podemos establcer el Teorema del umbral \cite{Foundations}, este teorema es de suma importancia pues establece la existecia de un valor critico del número de individuos suceptibles en una población a partir del cual se podra determinar la ocurrencia de una epidemia o no
 
 \begin{teo}
 Teorema del umbral.
@@ -342,10 +368,10 @@ Cuando $R_{e}  > 1$ nos indica que cada individuo infectado genera en promedio m
 
 \hfill	$\square$
 
-Una parte fundamental de los modelos compartimentales son sus parámetros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
-
 \section{Parámetros}
 \subsection{Tasa de recuperación \textbf{$\gamma$}}
+
+Una parte fundamental de los modelos compartimentales son sus parámetros en este caso $\beta$ (tasa de contagio) y $\gamma$(tasa de recuperación), ya que estos parametros son los que nos proporcionaran la información sobre el comportamiento de la enfermedad que buscamos modelar \cite{Martcheva}.
 
 Para poder encontrar un valor aproximado al parámetro $\gamma$, asumiremos que no se estan generando nuevas personas infectadas, por lo que el flujo de personas que entra a este compartimento ha parado obteniendo la siguiente ecuación.
 
